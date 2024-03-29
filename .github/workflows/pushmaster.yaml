@@ -1,0 +1,16 @@
+name: semgrep-rules-publish
+on:
+  push:
+    branches:
+      - master
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    container:
+      image: kasterma/semgrep
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: make publish
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
