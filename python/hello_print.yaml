@@ -1,7 +1,0 @@
-rules:
-  - id: hello-print
-    languages:
-      - python
-    message: plain print used
-    pattern: print("hello")
-    severity: INFO
