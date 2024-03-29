@@ -1,2 +1,5 @@
 test:
-	semgrep test python/
+	semgrep test .
+
+publish:
+	semgrep publish --visibility org_private .
