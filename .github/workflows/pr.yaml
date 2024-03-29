@@ -1,5 +1,5 @@
 name: semgrep-rules-pr
-on: [pr]
+on: [push, pull_request]
 jobs:
   run-test:
     runs-on: ubuntu-latest
