@@ -1,0 +1,7 @@
+rules:
+  - id: plain-print
+    languages:
+      - python
+    message: plain print used
+    pattern: print(...)
+    severity: INFO
